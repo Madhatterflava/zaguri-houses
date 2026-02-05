@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<head>
+<style>
+.map-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.map-wrapper img {
+  width: 100%;
+  display: block;
+}
+
+.plot {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #9e9e9e;
+  color: #000;
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 2px solid #000;
+  transition: transform .2s;
+}
+
+.plot:hover {
+  transform: scale(1.15);
+}
+
+/* статусы */
+.free { background: #9cff57; }
+.booked { background: #ffd54f; }
+.sold { background: #bdbdbd; }
+
+.tooltip {
+  position: absolute;
+  background: #fff;
+  padding: 10px 14px;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.2);
+  font-size: 14px;
+  display: none;
+  z-index: 10;
+}
+
+.tooltip h4 {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+
+.tooltip p {
+  margin: 4px 0;
+}
+
+.tooltip .actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.tooltip a {
+  flex: 1;
+  text-align: center;
+  padding: 6px 10px;
+  font-size: 13px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.tooltip .whatsapp {
+  background: #25d366;
+  color: #fff;
+}
+
+.tooltip .details {
+  background: #eee;
+  color: #000;
+}
+
+
+</style>
+</head>
+<body>
+    <div class="map-wrapper">
+        <img src="./our_houses.jpg" alt="План участков">
+
+        <!-- Участки -->
+    <div class="plot free"
+        style="top:68%; left:8%;"
+        data-title="Участок №1"
+        data-area="120 м²"
+        data-price="6 500 000 ₽"
+        data-whatsapp="79991234567"
+        data-link="/house-1">
+        1
+    </div>
+
+    
+    <div class="plot free"
+        style="top:59%; left:16%;"
+        data-title="Участок №1"
+        data-area="120 м²"
+        data-price="6 500 000 ₽"
+        data-whatsapp="79991234567"
+        data-link="/house-1">
+        2
+    </div>
+
+    <div class="plot booked"
+        style="top:51%; left:22%;"
+        data-title="Участок №1"
+        data-area="120 м²"
+        data-price="6 500 000 ₽"
+        data-whatsapp="79991234567"
+        data-link="/house-1">
+        3
+    </div>
+        <!-- <div class="plot sold" style="top:48%; left:55%;" data-info="Участок 284<br>Продан">3</div> -->
+
+
+    
+    <div class="tooltip" id="tooltip"></div>
+    </div>
+</body>
+<script>
+    // const tooltip = document.getElementById('tooltip');
+
+    // document.querySelectorAll('.plot').forEach(plot => {
+    // plot.addEventListener('click', e => {
+    //     tooltip.innerHTML = plot.dataset.info;
+    //     tooltip.style.display = 'block';
+    //     tooltip.style.top = (plot.offsetTop - 60) + 'px';
+    //     tooltip.style.left = (plot.offsetLeft + 50) + 'px';
+    // });
+    // });
+
+    // document.addEventListener('click', e => {
+    // if (!e.target.classList.contains('plot')) {
+    //     tooltip.style.display = 'none';
+    // }
+    // });
+
+const tooltip = document.getElementById('tooltip');
+
+document.querySelectorAll('.plot').forEach(plot => {
+  plot.addEventListener('click', e => {
+    e.stopPropagation();
+
+    const title = plot.dataset.title;
+    const area = plot.dataset.area;
+    const price = plot.dataset.price;
+    const phone = plot.dataset.whatsapp;
+    const link = plot.dataset.link;
+
+    tooltip.innerHTML = `
+      <h4>${title}</h4>
+      <p>${area}</p>
+      <p><strong>${price}</strong></p>
+
+      <div class="actions">
+        <a class="details"
+           href="${link}">Подробнее</a>
+
+        <a class="whatsapp"
+           href="https://wa.me/${phone}"
+           target="_blank">WhatsApp</a>
+      </div>
+    `;
+
+    tooltip.style.display = 'block';
+    tooltip.style.top = (plot.offsetTop - 80) + 'px';
+    tooltip.style.left = (plot.offsetLeft + 55) + 'px';
+  });
+});
+
+document.addEventListener('click', () => {
+  tooltip.style.display = 'none';
+});
+
+</script>
+</html>

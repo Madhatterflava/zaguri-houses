@@ -3,6 +3,9 @@
   font-family: Arial, sans-serif;
 } */
 
+.list-group-item .rounded-pill {
+  background-color: #FF9D2D!important;
+}
 
 .map-wrapper {
   position: relative;

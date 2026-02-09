@@ -3,6 +3,23 @@
   font-family: Arial, sans-serif;
 } */
 
+
+
+img {
+  cursor: zoom-in;
+}
+
+#zoomImage {
+  max-height: 100vh;
+  object-fit: contain;
+}
+
+#zoomClose {
+  width: 48px;
+  height: 48px;
+  z-index: 1056;
+}
+
 .list-group-item .rounded-pill {
   background-color: #FF9D2D!important;
 }
@@ -117,6 +134,18 @@
   .modal-houses-content {
     width: 100%;
     border-radius: 16px 16px 0 0;
+  }
+
+
+  .map-wrapper {
+    width: 100%;
+    max-width: 100%;
+    overflow: auto;
+  }
+
+  #main-map-img,
+  .map-svg {
+    width: 170%;
   }
 }
 

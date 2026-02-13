@@ -32,26 +32,26 @@
   <!-- SVG с полигонами -->
   <svg class="map-svg" viewBox="0 0 1000 600" preserveAspectRatio="none">
 
-    <polygon class="house free" data-title="Дом 1" data-info="244,22 м² · Свободен · 6 200 000 ₽" data-id="1" data-image="img/house-1.png"
+    <polygon class="house free" data-title="Дом 1" data-info="244,22 м² · Свободен · 21 000 000 ₽" data-id="1" data-image="img/house-1.png"
     points="67,466 101,428 175,490 135,520" />
 
-    <polygon class="house free" data-title="Дом 2" data-info="219,47 м² · Свободен · 6 200 000 ₽" data-id="2" data-image="img/house-2-1.webp"
+    <polygon class="house free" data-title="Дом 2" data-info="219,47 м² · Свободен · 22 000 000 ₽" data-id="2" data-image="img/house-2-1.webp"
     points="105,432 133,400 212,457 174,487" />
-    <polygon class="house free" data-title="Дом 3" data-info="219,47 м² · Свободен · 8 200 000 ₽" data-id="2" data-image="img/house-3.webp"
+    <polygon class="house free" data-title="Дом 3" data-info="219,47 м² · Свободен · 22 000 000 ₽" data-id="2" data-image="img/house-3.webp"
     points="245,430 171,369 139,404 214,457" />
-    <polygon class="house free" data-title="Дом 4" data-info="140.39 м² · Свободен · 8 200 000 ₽" data-id="4" data-image="img/house-4.webp"
+    <polygon class="house free" data-title="Дом 4" data-info="140.39 м² · Свободен · 19 000 000 ₽" data-id="4" data-image="img/house-4.webp"
     points="284,396 208,338 176,371 247,429" />
-    <polygon class="house free" data-title="Дом 5" data-info="140.39 м² · Свободен · 8 200 000 ₽" data-id="4" data-image="img/house-5.webp"
+    <polygon class="house free" data-title="Дом 5" data-info="140.39 м² · Свободен · 19 000 000 ₽" data-id="4" data-image="img/house-5.webp"
     points="320,369 248,308 212,341 285,396" />
-    <polygon class="house free" data-title="Дом 6" data-info="198.58 м² · Свободен · 8 200 000 ₽" data-id="6" data-image="img/house-6.webp"
+    <polygon class="house free" data-title="Дом 6" data-info="198.58 м² · Свободен · 22 000 000 ₽" data-id="6" data-image="img/house-6.webp"
     points="358,337 281,275 252,309 320,368" />
-    <polygon class="house free" data-title="Дом 7" data-info="198.58 м² · Свободен · 8 200 000 ₽" data-id="6" data-image="img/house-6-3.webp"
+    <polygon class="house free" data-title="Дом 7" data-info="198.58 м² · Свободен · 22 000 000 ₽" data-id="6" data-image="img/house-6-3.webp"
     points="396,303 319,244 286,278 357,337" />
-    <polygon class="house free" data-title="Дом 8" data-info="205.3 м² · Свободен · 8 200 000 ₽" data-id="8" data-image="img/house-8.png"
+    <polygon class="house free" data-title="Дом 8" data-info="205.3 м² · Свободен · 00 000 000 ₽" data-id="8" data-image="img/house-8.png"
     points="435,272 359,213 325,248 394,303" />
-    <polygon class="house free" data-title="Дом 9" data-info="205.3 м² · Свободен · 8 200 000 ₽" data-id="8" data-image="img/house-9.png"
+    <polygon class="house free" data-title="Дом 9" data-info="205.3 м² · Свободен · 00 000 000 ₽" data-id="8" data-image="img/house-9.png"
     points="471,243 394,187 363,217 435,271" />
-    <polygon class="house sold" data-title="Дом 10" data-info="140 м² · Продан · 8 200 000 ₽" data-id="10" data-image="img/house-10.png"
+    <polygon class="house sold" data-title="Дом 10" data-info="140 м² · Продан" data-id="10" data-image="img/house-10.png"
     points="510,211 433,154 398,190 472,242" />
     <!-- <polygon class="house booked"
       data-title="Дом 269"
@@ -91,7 +91,7 @@
 <div class="row w-100 ps-5 mt-5 justify-content-between gap-3 align-items-center"  data-house="1">
       <div class="col-md-4">
         <h2 class="featurette-heading fw-normal lh-1">Дом №1 «ГРАНД»</h2>
-        <h3 class="text-body-secondary"> 244,22 м²</h3>
+        <h3 class="text-body-secondary"> 244,22 м² · <span class="prices">21 000 000 ₽</span></h3>
         <p class="lead">Этот дом - верное решение для комфортной жизни большой семьи</p>
 
         <ul class="list-group">
@@ -124,11 +124,11 @@
             <span class="badge bg-primary rounded-pill">1шт</span>
           </li>
         </ul>
-        <div class="text-center">
+        <!-- <div class="text-center">
           <a id="waBtn" class="btn btn-lg w-100 btn-success whatsapp rounded-4 mt-3" href="tel:89648609988">Хочу купить</a>
-        </div>
+        </div> -->
       </div>
-      <div class="col-md-7">
+      <div class="col-md-7" style="flex:auto">
         <div id="carouselHouse1" class="carousel slide">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselHouse1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -156,6 +156,15 @@
           </button>
         </div>
       </div>
+        <div class="d-flex flex-row align-items-center gap-2 text-center">
+          <a id="waBtn" class="btn btn-lg w-100 btn-success whatsapp rounded-4" href="tel:89648609988">Хочу купить</a>
+          <a href="https://t.me/+79648609988" class="text-decoration-none btn btn-lg w-100 btn-outline-light rounded-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="black" class="bi bi-telegram" viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+            </svg>
+          </a>
+        </div>
+
 
 </div>
 
@@ -164,7 +173,7 @@
 
       <div class="col-md-4">
         <h2 class="featurette-heading fw-normal lh-1">Дом №2, №3 «ИДИЛИЯ»</h2>
-        <h3 class="text-body-secondary"> 219,47 м²</h3>
+        <h3 class="text-body-secondary"> 219,47 м² · <span class="prices">22 000 000 ₽</span></h3>
         <p class="lead">
           Большая площадь дома позволяет каждому члену семьи иметь личное пространство для отдыха и занятий
         </p>
@@ -199,11 +208,13 @@
             <span class="badge bg-primary rounded-pill">1шт</span>
           </li>
         </ul>
-        <div class="text-center">
-          <a id="waBtn" class="btn btn-lg w-100 btn-success whatsapp rounded-4 mt-3" href="tel:89648609988">Хочу купить</a>
-        </div>
+        <!-- <div class="text-center">
+          <a id="waBtn" type="button" class="btn btn-lg w-100 btn-success whatsapp rounded-4 mt-3" href="tel:89648609988">
+            Хочу купить
+          </a>
+        </div> -->
       </div>
-      <div class="col-md-7">
+      <div class="col-md-7" style="flex:auto">
         <div id="carouselHouse2" class="carousel slide">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselHouse2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -246,8 +257,19 @@
             <span class="visually-hidden">Следующий</span>
           </button>
         </div>
-      
+        
       </div>
+
+        <div class="d-flex flex-row align-items-center gap-2 text-center">
+          <a id="waBtn" class="btn btn-lg w-100 btn-success whatsapp rounded-4" href="tel:89648609988">Хочу купить</a>
+          <a href="https://t.me/+79648609988" class="text-decoration-none btn btn-lg w-100 btn-outline-light rounded-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="black" class="bi bi-telegram" viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+            </svg>
+          </a>
+        </div>
+
+
 </div>
 
 <!-- Четвертый и пятый дома -->
@@ -255,7 +277,7 @@
 
       <div class="col-md-4">
         <h2 class="featurette-heading fw-normal lh-1">Дом №4, №5 «СЕМЕЙНЫЙ»</h2>
-        <h3 class="text-body-secondary"> 140.39 м²</h3>
+        <h3 class="text-body-secondary"> 140.39 м² · <span class="prices">19 000 000 ₽</span></h3>
         <p class="lead">
           Такой дом — идеальное решение для тех, кто ценит комфорт, практичность и возможность создать по-настоящему семейное гнездышко, где каждому будет уютно и тепло
         </p>
@@ -286,11 +308,11 @@
             <span class="badge bg-primary rounded-pill">1шт</span>
           </li>
         </ul>
-        <div class="text-center">
+        <!-- <div class="text-center">
           <a id="waBtn" class="btn btn-lg w-100 btn-success whatsapp rounded-4 mt-3" href="tel:89648609988">Хочу купить</a>
-        </div>
+        </div> -->
       </div>
-      <div class="col-md-7">
+      <div class="col-md-7" style="flex:auto">
         <div id="carouselHouse3" class="carousel slide">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselHouse3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -327,6 +349,16 @@
         </div>
       </div>
 
+        <div class="d-flex flex-row align-items-center gap-2 text-center">
+          <a id="waBtn" class="btn btn-lg w-100 btn-success whatsapp rounded-4" href="tel:89648609988">Хочу купить</a>
+          <a href="https://t.me/+79648609988" class="text-decoration-none btn btn-lg w-100 btn-outline-light rounded-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="black" class="bi bi-telegram" viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+            </svg>
+          </a>
+        </div>
+
+
 </div>
 
 <!-- Шестой и седьмой дома -->
@@ -334,7 +366,7 @@
 
       <div class="col-md-4">
         <h2 class="featurette-heading fw-normal lh-1">Дом №6, №7 «ЛАЙФ»</h2>
-        <h3 class="text-body-secondary"> 198.58 м²</h3>
+        <h3 class="text-body-secondary"> 198.58 м² · <span class="prices">22 000 000 ₽</span></h3>
         <p class="lead">
           <strong>Функциональная планировка.</strong> Общим пространством является кухня-столовая из которой можно попасть на террасу где можно обустроить зону для барбекю
         </p>
@@ -370,11 +402,11 @@
           </li>
           
         </ul>
-        <div class="text-center">
+        <!-- <div class="text-center">
           <a id="waBtn" class="btn btn-lg w-100 btn-success whatsapp rounded-4 mt-3" href="tel:89648609988">Хочу купить</a>
-        </div>
+        </div> -->
       </div>
-      <div class="col-md-7">
+      <div class="col-md-7" style="flex:auto">
         <div id="carouselHouse4" class="carousel slide">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselHouse4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -411,6 +443,17 @@
         </div>
       </div>
 
+
+        <div class="d-flex flex-row align-items-center gap-2 text-center">
+          <a id="waBtn" class="btn btn-lg w-100 btn-success whatsapp rounded-4" href="tel:89648609988">Хочу купить</a>
+          <a href="https://t.me/+79648609988" class="text-decoration-none btn btn-lg w-100 btn-outline-light rounded-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="black" class="bi bi-telegram" viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+            </svg>
+          </a>
+        </div>
+
+
 </div>
 
 <!-- Восьмой и девятый дома -->
@@ -418,7 +461,7 @@
 
       <div class="col-md-4">
         <h2 class="featurette-heading fw-normal lh-1">Дом №8, №9 «O2»</h2>
-        <h3 class="text-body-secondary"> 205.3 м²</h3>
+        <h3 class="text-body-secondary"> 205.3 м² · <span class="prices">00 000 000 ₽</span></h3>
         <p class="lead">
           Великолепный дом, где каждая детальпродумана для вашего комфорта
         </p>
@@ -458,11 +501,11 @@
           </li>
           
         </ul>
-        <div class="text-center">
+        <!-- <div class="text-center">
           <a id="waBtn" class="btn btn-lg w-100 btn-success whatsapp rounded-4 mt-3" href="tel:89648609988">Хочу купить</a>
-        </div>
+        </div> -->
       </div>
-      <div class="col-md-7">
+      <div class="col-md-7" style="flex:auto">
         <div id="carouselHouse5" class="carousel slide">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselHouse5" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -494,6 +537,17 @@
           </button>
         </div>
       </div>
+
+
+        <div class="d-flex flex-row align-items-center gap-2 text-center">
+          <a id="waBtn" class="btn btn-lg w-100 btn-success whatsapp rounded-4" href="tel:89648609988">Хочу купить</a>
+          <a href="https://t.me/+79648609988" class="text-decoration-none btn btn-lg w-100 btn-outline-light rounded-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="black" class="bi bi-telegram" viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+            </svg>
+          </a>
+        </div>
+
 
 </div>
 
